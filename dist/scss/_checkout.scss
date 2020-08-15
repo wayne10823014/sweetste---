@@ -1,0 +1,221 @@
+
+  
+.checkout {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 60px;
+  }
+
+  .checkout_left {
+    font-weight: 600;
+    background-color: #3F5D45;
+    color: #EAF0ED;
+  
+    .invoice {
+      padding: 30px 30px;
+      position: relative;
+    }
+  
+    .checkout_invoice_top {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+      margin-bottom: 30px;
+  
+      .checkout_logo {
+        font-size: 36px;
+      }
+  
+      .checkout_tick {
+        &::before {
+          content: "";
+          position: absolute;
+          border-top: 1px solid #EAF0ED;
+          width: 130px;
+          top: 12.4%;
+          left: 56%;
+          z-index: 1;
+        }
+  
+        display: -webkit-box;
+        display: flex;
+        width: 150px;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+  
+        .tick1, .tick2 {
+          width: 14px;
+          height: 14px;
+          background-color: #EAF0ED;
+          padding: 2px;
+          border-radius: 50%;
+          z-index: 3;
+        }
+  
+        .tick3 {
+          background-color: #EAF0ED;
+          border-radius: 50%;
+          width: 20px;
+          height: 20px;
+          position: relative;
+          z-index: 3;
+  
+          &::before {
+            content: "";
+            position: absolute;
+            width: 12px;
+            left: 11%;
+            top: 11%;
+            height: 12px;
+            border-radius: 50%;
+            border: 2px solid #3F5D45;
+          }
+        }
+      }
+    }
+  
+    .checkout_invoice {
+      display: -webkit-box;
+      display: flex;
+      border: 1px solid #EAF0ED;
+      margin-bottom: 30px;
+      justify-content: center;
+      align-items: center;
+  
+      .checkout_elinvoice, .checkout_stampinvoice {
+        flex: 6;
+        text-align: center;
+        padding: 14px 39px;
+      }
+  
+      .checkout_elinvoice {
+        background-color: #EAF0ED;
+        color: #3F5D45;
+      }
+    }
+  
+    input {
+      margin-top: 8px;
+      margin-bottom: 16px;
+      width: 330px;
+      background-color: #EAF0ED;
+      padding: 17px 0px 17px 20px;
+      border: none;
+    }
+  
+    .checkout_button {
+      background-color: #FFE180;
+      color: #3F5D45;
+      padding: 19px 0px;
+      text-align: center;
+      font-size: 24px;
+    }
+  }
+  
+  .checkout_right {
+    margin-left: 20px;
+  
+    .checkout_summary {
+      .checkout_summary_logo {
+        font-size: 24px;
+        padding: 16px 100px;
+        background-color: #EAF0ED;
+        color: #8DA291;
+        font-weight: 600;
+      }
+  
+      .checkout_list {
+        border: 1px solid #EAF0ED;
+        padding: 16px 20px;
+      }
+  
+      ul {
+        font-size: 16px;
+        color: #8DA291;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        font-weight: 300;
+  
+        li {
+          margin-bottom: 8px;
+        }
+  
+        .total {
+          font-weight: 600;
+          margin-top: 8px;
+        }
+      }
+    }
+  
+    .checkout_checklist {
+      .checkout_list {
+        border: 1px solid #EAF0ED;
+      }
+  
+      .checkout_checklist_logo {
+        font-weight: 600;
+        font-size: 24px;
+        padding: 16px 100px;
+        color: #8DA291;
+        background-color: #EAF0ED;
+      }
+  
+      .checkout_shoplist {
+        display: -webkit-box;
+        display: flex;
+        margin: 16px 20px;
+        -webkit-box-align: center;
+        align-items: center;
+  
+        .checkout_checklist_img {
+          width: 120px;
+          height: 80px;
+        }
+  
+        ul {
+          color: #8DA291;
+          margin-left: 20px;
+  
+          li {
+            margin-bottom: 2px;
+          }
+  
+          .nt {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .checkout_right {
+      display: none;
+    }
+  }
+  @media (max-width: 768px) {
+    .checkout_left {
+      width: 100%;
+      margin: auto;
+      input{
+        width: 285px;
+        padding-left: 20px;
+      }
+    }
+
+  }
+  @media (max-width: 768px) {
+    .checkout {
+      margin-bottom: 0px;
+    }
+  }

@@ -1,0 +1,214 @@
+.bigimg {
+    width: 940px;
+    height: 496px;
+    background-size: cover;
+    margin-bottom: 60px;
+  }
+  
+  @media(max-width: 768px) {
+    .bigimg {
+      width: 100%;
+      height: auto;
+      margin-bottom: 0px;
+    }
+  }
+  .item {
+    display: -webkit-box;
+    display: flex;
+    max-width: 1024px;
+  }
+  .item .item_left {
+    cursor: pointer;
+  }
+  .item .item_left li {
+    width: 300px;
+    height: 65px;
+    font-weight: bold;
+    border: 1px solid #EAF0ED;
+    text-align: center;
+    line-height: 65px;
+    font-size: 24px;
+    color: #3F5D45;
+    font-weight: bold;
+  }
+  .item .item_left .select {
+    background-color: #3F5D45;
+    color: white;
+  }
+  .item .item_left .all {
+    background-color: #EAF0ED;
+  }
+  .item .item_right {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item .item_right .desert {
+    width: 300px;
+    margin: 0px 0px 0px 15px;
+    margin-bottom: 20px;
+  }
+  .item .item_right .desert .top {
+    position: relative;
+  }
+  .item .item_right .desert .top .deimg {
+    height: 315px;
+  }
+  .item .item_right .desert .top .today {
+    width: 16px;
+    height: 87px;
+    top: 0px;
+    position: absolute;
+    left: 20px;
+    color: white;
+    padding: 10px;
+    background-color: #3F5D45;
+    line-height: 20px;
+  }
+  .item .item_right .desert .top .love {
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true);
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    top: 19px;
+    right: 22px;
+  }
+  .item .item_right .desert .middle {
+    display: -webkit-box;
+    display: flex;
+    border-left: 1px #EAF0ED solid;
+  }
+  .item .item_right .desert .middle h3 {
+    text-align: center;
+    border-right: 1px #EAF0ED solid;
+    font-size: 20px;
+    -webkit-box-flex: 6;
+            flex: 6;
+    color: #3F5D45;
+  }
+  .item .item_right .desert .middle .name {
+    padding: 14px 31px;
+  }
+  .item .item_right .desert .middle .money {
+    padding: 14px 20px 14px 15px;
+    font-weight: bold;
+  }
+  .item .item_right .desert .bottom {
+    background-color: #EAF0ED;
+    text-align: center;
+    line-height: 20px;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #3F5D45;
+    font-weight: bold;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .item .item_right .desert .bottom:hover {
+    background-color: #3F5D45;
+    color: white;
+  }
+  
+  @media(max-width: 768px) {
+    .item {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      -webkit-box-align: center;
+              align-items: center;
+    }
+    .item .item_left {
+      width: 100%;
+      margin: 0px;
+    }
+    .item .item_left li {
+      width: 100%;
+    }
+    .item .item_right {
+      -webkit-box-pack: center;
+              justify-content: center;
+      margin-top: 30px;
+    }
+  }
+  .page {
+    display: -webkit-box;
+    display: flex;
+    margin-bottom: 60px;
+    border-right: 1px solid #EAF0ED;
+    border-top: 1px solid #EAF0ED;
+    margin-right: 40px;
+    width: 300px;
+    border-bottom: 1px solid #EAF0ED;
+  }
+  .page .box {
+    width: 60px;
+    height: 60px;
+    border-left: 1px solid #EAF0ED;
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .page .box:hover {
+    background-color: #EAF0ED;
+    color: #3F5D45;
+  }
+  .page .one {
+    background-color: #3F5D45;
+    color: white;
+  }
+  .page .page_left {
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_left.png?raw=true);
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    margin: auto;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    top: 50%;
+    position: relative;
+  }
+  .page .page_right {
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_right.png?raw=true);
+    background-size: cover;
+    margin: auto;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    top: 50%;
+    position: relative;
+    width: 24px;
+    height: 24px;
+  }
+  
+  @media(max-width: 768px) {
+    .page {
+      margin: auto;
+      margin-bottom: 30px;
+    }
+  }
+
+  .img1 {
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-1.png?raw=true);
+  }
+  
+  .img2 {
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-2.png?raw=true);
+  }
+  
+  .img3 {
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-3.png?raw=true);
+  }
+  
+  .img4 {
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-4.png?raw=true);
+  }
+  
+  .img5 {
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-5.png?raw=true);
+  }
+  
+  .img6 {
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-6.png?raw=true);
+  }
